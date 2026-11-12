@@ -52,7 +52,7 @@ h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:18px}h3{font-size:1.25rem;ma
 
 /* people, gallery */
 .people{display:flex;flex-wrap:wrap;gap:28px}
-.person{width:140px;text-align:center}.person small{display:block;color:var(--muted)}
+.person{width:160px;text-align:center}.person small{display:block;color:var(--muted)}
 .avatar{width:100px;height:100px;margin:0 auto 10px;border-radius:50%;display:grid;place-items:center;background:var(--bg2);border:1px solid var(--line);font:600 1.2rem "Fraunces",serif;color:var(--accent)}
 .you .avatar{border-style:dashed;font-size:2rem}
 
@@ -72,8 +72,8 @@ h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:18px}h3{font-size:1.25rem;ma
   url(assets/glimpse-banner.jpg) center/cover no-repeat,
   url(https://cdn.esawebb.org/archives/images/screen/potm2505a.jpg) center/cover no-repeat,#0a0d1a}
 .hero-inner{max-width:680px;text-shadow:0 2px 18px rgba(0,0,0,.55)}
-.portrait{position:relative;width:132px;height:132px;margin:0 auto 20px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;background:rgba(10,13,26,.6);overflow:hidden;font:600 2.2rem "Fraunces",serif;color:var(--accent);text-shadow:none}
-.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait{position:relative;width:148px;height:148px;margin:0 auto 20px;border-radius:50%;border:2px solid var(--accent);display:grid;place-items:center;background:rgba(10,13,26,.6);overflow:hidden;font:600 2.2rem "Fraunces",serif;color:var(--accent);text-shadow:none}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 22%}
 .hero h1{font-size:clamp(2.8rem,8vw,5rem);font-weight:600;letter-spacing:-.02em;color:#fff}
 .role{color:var(--accent);font:500 .8rem "JetBrains Mono",monospace;letter-spacing:.08em;text-transform:uppercase;margin:14px 0}
 .tagline{font-size:1.2rem;margin:0 0 22px;color:rgba(255,255,255,.88)}
@@ -106,3 +106,13 @@ address .mail{color:#fff;font:600 1.25rem "Fraunces",serif;text-decoration:under
 .go{color:var(--muted)}.proj:hover .go{color:var(--accent)}
 .people .avatar{margin-bottom:10px}
 @media(max-width:520px){.projs{grid-template-columns:1fr}}
+
+/* contact + map */
+.contact{display:grid;grid-template-columns:1fr 1.3fr;gap:32px}
+.contact p{color:var(--muted)}
+.btn{display:inline-block;margin-top:6px;padding:9px 18px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font:500 .9rem "Inter",sans-serif}
+.btn.primary{background:var(--accent);color:var(--on);border-color:var(--accent)}
+.btn:hover{text-decoration:none}
+.contact iframe{width:100%;min-height:300px;border:1px solid var(--line);border-radius:18px}
+[data-theme=dark] .contact iframe{filter:invert(.9) hue-rotate(180deg) saturate(.7)}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
