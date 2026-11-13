@@ -123,3 +123,10 @@ address .mail{color:#fff;font:600 1.1rem "Fraunces",serif;text-decoration:underl
 .hero-text{flex:0 1 480px}
 .hero .role,.hero .tagline,.hero address span{text-wrap:balance}
 .bio{text-wrap:pretty}
+/* keep square logos inside the project header */
+.phead{overflow:hidden;box-sizing:border-box}
+.phead img{display:block;max-height:64px;max-width:80%;width:auto;height:auto;object-fit:contain}
+/* robust logo fit: the image is boxed inside the header whatever its shape */
+.phead{position:relative;display:block;height:104px;padding:0;overflow:hidden}
+.phead .fb{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:12px;padding:0 20px}
+.phead img{position:absolute;inset:14px 20px;display:block;width:calc(100% - 40px);height:calc(100% - 28px);max-width:none;max-height:none;object-fit:contain;object-position:center}
